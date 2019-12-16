@@ -50,18 +50,25 @@
         i {
             margin-right: 8px;
             display: inline-flex;
-
+            position: relative;
+            p {
+               position: absolute;
+               left: 6px;
+               top: 3px;
+               font-size: 10px;
+               color: #FFFFFF;
+            }
             svg {
-
                 path {
                     fill: #7c7c7c;
+                   
                 }
             }
         }
 
         .badge {
             position: relative;
-            left: 5px;
+           // left: 5px;
         }
     }
 

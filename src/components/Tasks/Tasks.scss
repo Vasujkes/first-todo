@@ -17,7 +17,7 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 39px;
-        color: #64C4ED;
+        //color: #64C4ED;
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #fbe3b9;
@@ -48,6 +48,7 @@
             cursor: pointer;
             opacity: 0.4;
             transition: opacity 0.15s ease-in-out;
+            padding-left: 15px;
 
             &:hover {
                 opacity: 0.8;
@@ -72,6 +73,7 @@
                 margin-left: 15px;
             }
         }
+
         &-block {
             .button {
                 margin-right: 10px;
@@ -88,8 +90,15 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            padding: 15px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover &-actions {
+                opacity: 0.5;
+            }
 
-            input {
+            p {
                 flex: 1;
                 font-family: Roboto;
                 font-style: normal;
@@ -98,8 +107,44 @@
                 font-size: 16px;
                 line-height: 19px;
                 color: #000000;
+                background-color: transparent;
+                border: 0;
+            }
+
+            &-actions {
+                display: flex;
+                opacity: 0;
+                transition: opacity 0.15s ease-in-out;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+     
+                    border-radius: 6px;
+                    margin-left: 5px;
+                  
+
+                    &:hover {
+           
+
+                        svg {
+                            opacity: 0.9;
+                        }
+                    }
+
+                    svg {
+                        width: 11px;
+                        height: 11px;
+                        opacity: 0.4;
+                    }
+
+                }
             }
         }
+
     }
 
     .checkbox {

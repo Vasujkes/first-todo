@@ -15,7 +15,6 @@ const AddList = ({ colors, onAdd }) => {
   useEffect(() => {
     if (Array.isArray(colors)) {
       selectColor(colors[0].id);
-      console.log(colors[0].hex);
     }
   }, [visiblePopup]);
 
@@ -36,8 +35,8 @@ const AddList = ({ colors, onAdd }) => {
         colorId: selectedColor
       })
       .then(({ data }) => {
-        const color = colors.filter(c => c.id === selectedColor)[0].name;
-        const listObj = { ...data, color: { name: color } };
+        const color = colors.filter(c => c.id === selectedColor)[0];
+        const listObj = { ...data, color, tasks: [] };
         onAdd(listObj);
         onClose();
       })
