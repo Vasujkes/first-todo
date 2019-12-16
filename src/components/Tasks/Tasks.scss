@@ -1,6 +1,6 @@
 .tasks {
     margin: 57px;
-    
+
 
     &__empty {
         font-family: Montserrat;
@@ -8,7 +8,7 @@
         font-size: 42px;
         color: #f9d597;
         margin-top: 15px;
-        
+
     }
 
     &__title {
@@ -19,6 +19,7 @@
         line-height: 39px;
         color: #64C4ED;
         padding-bottom: 20px;
+        margin-bottom: 20px;
         border-bottom: 1px solid #fbe3b9;
 
         &:hover {
@@ -38,14 +39,55 @@
         }
     }
 
+    &__form {
+        margin-top: 5px;
+
+        &-new {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            opacity: 0.4;
+            transition: opacity 0.15s ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+                margin-left: 2px;
+                opacity: 0.8;
+
+                svg {
+                    path {
+                        fill: #2d334a;
+                    }
+                }
+
+            }
+
+            span {
+                font-size: 16px;
+                margin-left: 15px;
+            }
+        }
+        &-block {
+            .button {
+                margin-right: 10px;
+                margin-top: 16px;
+            }
+        }
+    }
+
     &__items {
         margin-bottom: 20px;
-        
+
 
         &-row {
             display: flex;
             align-items: center;
-           margin-top: 15px;
+            margin-bottom: 20px;
 
             input {
                 flex: 1;

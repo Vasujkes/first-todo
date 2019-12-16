@@ -43,6 +43,7 @@
   border-radius: 4px;
   padding: 8px 12px;
   width: 100%;
+  font-size: 14px;
 
   &:focus {
     border-color: #dbdbdb
@@ -58,10 +59,23 @@
   cursor: pointer;
 
   &:hover {
-    background: darken(#4DD599, 6%)
+    background: darken(#4DD599, 2%)
   }
-
   &:active {
     background: darken(#4DD599, 10%)
   }
+  &:disabled {
+    background-color: #aeaeae;
+  }
+  &--cancel {
+    background: #fab696;
+    color: #2d334a;
+    &:hover {
+      background: darken(#fab696, 2%)
+    }
+    &:active {
+      background: darken(#fab696, 6%)
+    }
+  }
+  
 }

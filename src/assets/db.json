@@ -21,24 +21,9 @@
       "colorId": 2
     },
     {
-      "id": 5,
-      "name": "Личное",
-      "colorId": 1
-    },
-    {
-      "name": "Спорт",
-      "colorId": 3,
-      "id": 6
-    },
-    {
       "name": "Курс по ReactJS ToDo",
       "colorId": 7,
       "id": 7
-    },
-    {
-      "name": "Привет",
-      "colorId": 8,
-      "id": 8
     }
   ],
   "tasks": [
@@ -125,6 +110,36 @@
       "text": "Сделали удаление и редактирование задач и списков",
       "completed": true,
       "id": 17
+    },
+    {
+      "listId": 1,
+      "text": "sss",
+      "completed": false,
+      "id": 18
+    },
+    {
+      "listId": 1,
+      "text": "asdas",
+      "completed": false,
+      "id": 19
+    },
+    {
+      "listId": 1,
+      "text": "ssdaaas",
+      "completed": false,
+      "id": 21
+    },
+    {
+      "listId": 1,
+      "text": "",
+      "completed": false,
+      "id": 22
+    },
+    {
+      "listId": 1,
+      "text": "sdasdad",
+      "completed": false,
+      "id": 23
     }
   ],
   "colors": [
